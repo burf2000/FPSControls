@@ -89,6 +89,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, SCNSceneRen
         //add a camera node
         camNode = SCNNode()
         camNode.position = SCNVector3(x: 0, y: 0, z: 0)
+        //camNode.eulerAngles = SCNVector3(x: 0 * Float((M_PI) / 180), y: 0 * Float((M_PI) / 180), z: 90 * Float((M_PI) / 180))
         heroNode.addChildNode(camNode)
         
         //add camera

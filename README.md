@@ -29,9 +29,7 @@ It should be quite feasible to add other, lower-priority "hunt and peck" control
 Supported iOS & SDK Versions
 -----------------------------
 
-* Supported build target - iOS 8.1 (Xcode 6.1, Apple LLVM compiler 6.0)
-* Earliest supported deployment target - iOS 8.0
-* Earliest compatible deployment target - iOS 8.0
+Updated to Swift 1.2
 
 NOTE: 'Supported' means that the library has been tested with this version. 'Compatible' means that the library should work on this iOS version (i.e. it doesn't rely on any unavailable SDK features) but is no longer being tested for compatibility and may require tweaking or bug fixes to run correctly.
 
@@ -47,6 +45,11 @@ Run it on a real device instead. You should get 60fps on an iPhone 6, or compara
 Release notes
 ---------------
 
-Version 1.0
+Version 1.1
 
 - First release
+- Updated to Swift 1.2
+
+Upcoming 
+- Seems to have a couple of issues on device
+- May move to swift 2

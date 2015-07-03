@@ -23,11 +23,11 @@ struct FaceVisibility : RawOptionSetType {
     init(_ value: UInt) { self.value = value }
     init(rawValue value: UInt) { self.value = value }
     init(nilLiteral: ()) { self.value = 0 }
-    static var allZeros: FaceVisibility { return self(0) }
-    static func fromMask(raw: UInt) -> FaceVisibility { return self(raw) }
+    static var allZeros: FaceVisibility { return self.init(0) }
+    static func fromMask(raw: UInt) -> FaceVisibility { return self.init(raw) }
     var rawValue: UInt { return self.value }
     
-    static var None: FaceVisibility { return self(0) }
+    static var None: FaceVisibility { return self.init(0) }
     static var Top: FaceVisibility { return FaceVisibility(1 << 0) }
     static var Right: FaceVisibility { return FaceVisibility(1 << 1) }
     static var Bottom: FaceVisibility { return FaceVisibility(1 << 2) }
